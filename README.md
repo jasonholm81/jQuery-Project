@@ -20,3 +20,26 @@ Once the page loads, an alert will tell you that the page has loaded. Once that 
 ## Preview
 
 Here are a few screen grabs to give you a sense of the page functionality.
+
+Page load alert
+![Screenshot 2021-03-09 at 19 30 27](https://user-images.githubusercontent.com/60799980/110528209-cc7a6d00-810f-11eb-8d28-4a9009ea5cfa.png)
+
+Background changed to lightgreen
+![Screenshot 2021-03-09 at 19 30 41](https://user-images.githubusercontent.com/60799980/110528270-e1570080-810f-11eb-8bc8-bdd3483ace6d.png)
+
+First circle clicked and disappeared
+![Screenshot 2021-03-09 at 19 31 00](https://user-images.githubusercontent.com/60799980/110528450-14998f80-8110-11eb-8982-f6c7ed42485d.png)
+
+jQueryUI accordion dropdown menu
+![Screenshot 2021-03-09 at 19 31 18](https://user-images.githubusercontent.com/60799980/110528571-3266f480-8110-11eb-8ebb-6ac273e9429c.png)
+
+Hoho meme at starting point
+![Screenshot 2021-03-09 at 19 31 36](https://user-images.githubusercontent.com/60799980/110528632-43176a80-8110-11eb-944c-0199d0978bed.png)
+
+Hoho meme faded out
+![Screenshot 2021-03-09 at 19 32 17](https://user-images.githubusercontent.com/60799980/110528662-4dd1ff80-8110-11eb-9cfd-5560b27f08ed.png)
+
+Chained animations with changing div background color as it slides around the page
+![Screenshot 2021-03-09 at 19 32 34](https://user-images.githubusercontent.com/60799980/110528781-6e01be80-8110-11eb-8e2c-ef178d26ae46.png)
+![Screenshot 2021-03-09 at 19 32 44](https://user-images.githubusercontent.com/60799980/110528796-70fcaf00-8110-11eb-978d-cef7350e910a.png)
+
