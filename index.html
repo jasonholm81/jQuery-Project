@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>jQuery Task</title>
+	<!-- some styles to set margins to 0 and create circles for the object fadeOuts-->
+	<style>
+		
+	  * {
+			margin: 0;
+			padding: 0;
+		}
+	  .circle {
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			background-color: purple;
+			margin: 20px;
+	  }
+		
+	
+	</style>
+	<!-- jquery, jqueryui and jquery style sheet cdns -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+	
+	<div class="animate">
+		<h1>jQuery Task</h1>
+		<br>
+		<p>Check other functions first, otherwise you will be chasing these animation buttons around the screen 🤣.</p>
+		<br>
+		<p>Note: fadeOut and fadeIn buttons at very bottom of page.</p>
+		<br>
+		<!-- buttons for animation start and stop -->
+		<button class="start-animation">Start Animation</button>
+		<button class="stop-animation">Stop Animation</button>
+		<!-- divs for objects to fadeOut when clicked -->
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo incidunt temporibus tempora ad sed aut accusantium reiciendis odio consectetur. Mollitia tenetur at id laborum reprehenderit recusandae odit dolor nemo.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur temporibus suscipit vitae natus beatae nulla consectetur officia voluptatum. Cumque ex, culpa libero sed corporis quas obcaecati voluptatibus ut atque.</p>
+		<button class="change-style">Change Style</button>
+		
+		<!-- clever me! got jquery ui and adjusted builtin function to open on hover -->
+		<div class="accordion">
+			<h3>Item 1</h3>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, eligendi, ducimus, repellat, voluptate itaque dolorem corporis placeat at hic doloribus a ab harum nihil laudantium maxime error quaerat voluptas quo.</p>
+			</div>
+			<h3>Item 2</h3>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, earum, nobis adipisci maxime odio tenetur voluptatum illum unde blanditiis dolores amet aliquid quasi ad vero ratione dolor sequi perspiciatis? Rem!</p>
+			</div>
+			<h3>Item 3</h3>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, incidunt doloribus animi aspernatur deserunt eius autem optio enim repudiandae quaerat qui harum aliquid quisquam quam voluptates. Autem optio at vero.</p>
+			</div>
+		</div>
+		<br>
+		<!-- yes, the angry lady and cat meme -->
+		<img src="hohomeme.jpeg" alt="hohomeme.jpeg" width="400px"> 
+		<br>
+		<!-- fadeOut and fadeIn buttons -->
+		<button class="fadeOut">Fade Out</button>
+		<button class="fadeIn">Fade In</button>
+	</div>
+	
+	<!-- script to write jquery -->
+	<script>
+		// set document to ready state
+		$(document).ready(function() {
+			// onload alert
+			alert("page loaded");
+			// onload background color change
+			$("body").css("backgroundColor", "lightgreen");
+			// function for button to change designated paragrapgh to italic
+			$(".change-style").click(function () {
+				$("#p1").css("fontStyle", "italic");
+				
+			});
+			// function to fadeOut circles
+			$(".circle").click(function (){
+				$(this).fadeOut("slow");
+			});
+			// jquery ui accordion with hover customization
+			$(".accordion").accordion( {
+				event: "mouseover"
+			});
+			// fadeOut function for image
+			$(".fadeOut").click(function() {
+				$("img").fadeOut(3000);
+			});
+			// fadeIn function for image
+			$(".fadeIn").click(function() {
+				$("img").fadeIn(3000);
+			});
+			// animation function to slide contents around the page
+			$(".start-animation").click(function() {
+				$(".animate").animate({marginLeft: 400}, 5000).animate({backgroundColor: "red"}).animate({marginLeft: 0}, 5000). animate({marginLeft: 400}, 5000). animate({backgroundColor: "yellow"}).animate({marginLeft: 0}, 5000).animate({marginLeft: 400}, 5000).animate({marginLeft: 0}, 5000)
+			});
+			// function to stop animation
+			$(".stop-animation").click(function() {
+				$(".animate").stop(true);
+			});
+			
+			
+		});
+		
+		
+		
+		
+	</script>
+</body>
+</html>
